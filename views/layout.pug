@@ -1,7 +1,23 @@
 doctype html
+
+mixin item(title, url)
+  li
+    a(href=url class= path == url ? 'active' : '' )=title
+
 html
   head
     title= title
     link(rel='stylesheet', href='/stylesheets/style.css')
   body
-    block content
+    div(class='wrap')
+      header(class='header')
+        span(class='header__logo') LOGO
+      section(class='main')
+        nav(class='main-nav')
+          ul
+          +item('Strona główna', '/')
+          +item('Aktualności', '/news')
+          +item('Ankieta', '/quiz')
+          +item('Panel Admina', '/admin')
+        aside(class='blog')  
+          block content
