@@ -1,7 +1,7 @@
 doctype html
 
 mixin item(title, url)
-  li
+  li(class='main-nav__li')
     a(href=url class= path == url ? 'active' : '' )=title
 
 html
@@ -14,10 +14,10 @@ html
         span(class='header__logo') LOGO
       section(class='main')
         nav(class='main-nav')
-          ul
-          +item('Strona główna', '/')
-          +item('Aktualności', '/news')
-          +item('Ankieta', '/quiz')
-          +item('Panel Admina', '/admin')
+          ul(class='main-nav__ul')
+            +item('Strona główna', '/')
+            +item('Aktualności', '/news')
+            +item('Ankieta', '/quiz')
+            +item('Panel Admina', '/admin')
         aside(class='blog')  
           block content

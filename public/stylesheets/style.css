@@ -13,7 +13,6 @@ body {
   display: flex;
   flex-direction: column;
   width: 1440px;
-  background-color: deeppink;
 }
 
 .main {
@@ -21,7 +20,11 @@ body {
   flex-direction: row;
 }
 
-header {
+.blog {
+  padding: 20px 50px;
+}
+
+.header {
   height: 150px;
   background-color: dimgray;
 }
@@ -42,12 +45,12 @@ a {
   background-color: #666;
 }
 
-ul {
+.main-nav__ul {
   list-style: none;
   width: 180px;
 }
 
-li {
-  margin: 3px;
+.main-nav__li {
+  margin: 3px 0;
   text-align: center;
 }
