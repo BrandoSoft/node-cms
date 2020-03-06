@@ -54,3 +54,32 @@ a {
   margin: 3px 0;
   text-align: center;
 }
+
+.form {
+  margin: 50px 100px;
+  padding: 10px 20px;
+  text-align: center;
+}
+
+.form__item {
+  margin: 10px;
+}
+
+.form__button {
+  padding: 10px 20px;
+  margin-top: 40px;
+  font-size: 18px;
+  font-weight: 900;
+  background-color: firebrick;
+  color: white;
+  border: 2px solid black;
+  text-transform: uppercase;
+  transition: .5s;
+}
+
+.form__button:hover {
+
+  background-color: red;
+  color: aliceblue;
+  transition: .5s;
+}
