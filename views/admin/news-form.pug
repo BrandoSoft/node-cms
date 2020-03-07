@@ -1,0 +1,15 @@
+extends ../layout
+
+block content
+  h1= title
+
+
+  form(method='post' class='form')
+    p   
+        label Tytuł
+        input(type='text' name='title' class='form__item' value=reqBody.title)
+    p   
+        label Opis
+        textarea(name='description' class='form__item' value=reqBody.description)
+    p   
+        input(type='submit' value="Dodaj Artykuł" class='form__button')
